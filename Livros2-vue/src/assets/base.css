@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+#app {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 10% 1fr;
+  grid-template-rows: 10% auto 10%;
+  grid-template-areas:
+    "header header"
+    "sidenav content"
+    "footer footer";
+}
+
+#header,
+#content,
+#sidenav,
+#footer {
+  border: 1px solid #fff;
+}
+
+#header {
+  grid-area: header;
+  background-color: #ffcaea;
+  color: #737373;
+  text-align: center;
+}
+#content {
+  grid-area: content;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #a6a6a6;
+  color:black;
+}
+#footer {
+  grid-area: footer;
+  background-color: #ffcaea;
+  height: 150px;
+  width: auto;
+
+}
+#sidenav {
+  grid-area: sidenav;
+  background-color: #fff;
+  color: #f627c1;
+}
+
+.block {
+  width: 300px;
+  height: 350px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  background-color: aliceblue;
+  color: #f627c1;
+}
+
+a{
+  text-decoration: none;
+  color: #737373;
+}
+
+p{
+  color: #737373;
+}
+
+
